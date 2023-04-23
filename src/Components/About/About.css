@@ -1,0 +1,81 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--second-bg-clr);
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about-img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.2rem solid var(--accent-clr);
+}
+
+span {
+  color: var(--accent-clr);
+}
+
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--second-bg-clr);
+  border-right: 0.2rem solid var(--accent-clr);
+  border-bottom: 0.2rem solid var(--second-bg-clr);
+  border-left: 0.2rem solid var(--accent-clr);
+  animation: rotationSpinner 8s linear infinite;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.btn-box.btnsocial {
+  display: inline-block;
+  width: 15rem;
+}
+
+.btn-box.btnsocial a::before {
+  background-color: var(--second-bg-clr);
+}
+
+/* keyframe animation */
+
+@keyframes rotationSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

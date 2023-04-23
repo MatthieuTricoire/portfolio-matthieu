@@ -1,0 +1,83 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  border: solid 1px red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.header.sticky {
+  background-color: var(--bg-clr);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--txt-clr);
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--txt-clr);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: var(--accent-clr);
+}
+
+.header .animate {
+  --i: 1;
+}
+
+.navbar .animate {
+  --i: 2;
+}
+
+#menu-icon {
+  cursor: pointer;
+  display: none;
+  position: relative;
+  --i: 2;
+}
+
+/* Animation on reload ans scroll */
+
+.animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  z-index: 100;
+}
+
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate {
+  animation: showRight 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}

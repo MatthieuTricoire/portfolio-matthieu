@@ -1,0 +1,72 @@
+/* General */
+
+/* Global style */
+
+section {
+  min-height: 100dvh;
+  padding: 10rem 9% 2rem;
+}
+
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.btn-box .btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 100%;
+  background-color: var(--accent-clr);
+  border: 0.2rem solid var(--accent-clr);
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--bg-clr);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-box .btn:nth-child(2) {
+  background-color: transparent;
+  color: var(--accent-clr);
+}
+
+.btn-box .btn:nth-child(2):hover {
+  color: var(--bg-clr);
+}
+
+.btn-box .btn:nth-child(2)::before {
+  background-color: var(--accent-clr);
+}
+
+.btn-box .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--bg-clr);
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-box .btn:hover::before {
+  width: 100%;
+}
+
+.btn-box .btn:hover {
+  color: var(--accent-clr);
+}
+
+.icon {
+  fill: var(--accent-clr);
+}
+
+/* Responsive */
