@@ -27,6 +27,7 @@
   -webkit-text-stroke: 0.7px var(--accent-clr);
   background-image: linear-gradient(var(--accent-clr), var(--accent-clr));
   background-repeat: no-repeat;
+  background-clip: text;
   -webkit-background-clip: text;
   background-position: -44rem 0;
   animation: homeBgText 6s linear infinite;
