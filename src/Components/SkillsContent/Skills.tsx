@@ -47,19 +47,19 @@ const Skills: FC = () => {
                 <h3>FRONTEND</h3>
                 <div className="bar">
                   <div className="techno">
-                    <IoLogoJavascript size={32} />
+                    <IoLogoJavascript size={24} />
                   </div>
                   <div className="techno">
-                    <FaReact size={32} />
+                    <FaReact size={24} />
                   </div>
                   <div className="techno">
-                    <AiOutlineHtml5 size={32} />
+                    <AiOutlineHtml5 size={24} />
                   </div>
                   <div className="techno">
-                    <FaCss3Alt size={32} />
+                    <FaCss3Alt size={24} />
                   </div>
                   <div className="techno">
-                    <SiTypescript size={32} />
+                    <SiTypescript size={24} />
                   </div>
                 </div>
               </div>
@@ -68,13 +68,13 @@ const Skills: FC = () => {
                 <h3>BACKEND</h3>
                 <div className="bar">
                   <div className="techno">
-                    <FaNodeJs size={32} />
+                    <FaNodeJs size={24} />
                   </div>
                   <div className="techno">
-                    <SiMongodb size={32} />
+                    <SiMongodb size={24} />
                   </div>
                   <div className="techno">
-                    <FaStripeS size={32} />
+                    <FaStripeS size={24} />
                   </div>
                 </div>
               </div>
@@ -83,13 +83,13 @@ const Skills: FC = () => {
                 <h3>DESIGN</h3>
                 <div className="bar">
                   <div className="techno">
-                    <FaFigma size={32} />
+                    <FaFigma size={24} />
                   </div>
                   <div className="techno">
-                    <SiAdobeillustrator size={32} />
+                    <SiAdobeillustrator size={24} />
                   </div>
                   <div className="techno">
-                    <SiAdobelightroom size={32} />
+                    <SiAdobelightroom size={24} />
                   </div>
                 </div>
               </div>
@@ -97,15 +97,17 @@ const Skills: FC = () => {
           </div>
         </div>
         <div className="skills-column">
-          <h3 className="title">Professional skills</h3>
+          <h3 className="title">Compétences</h3>
 
           <div className="skills-box">
             <div className="skills-content">
               <div className="progress">
-                <h3>
-                  HTML <span>90%</span>
-                </h3>
-                <div className="bar"></div>
+                <h3>PROJETS</h3>
+                <div className="bar">
+                  <div className="soft-skill">Méthode agile</div>
+                  <div className="soft-skill">Travail en équipe</div>
+                  <div className="soft-skill">Force de proposition</div>
+                </div>
               </div>
 
               <div className="progress">
@@ -119,10 +121,11 @@ const Skills: FC = () => {
 
               <div className="progress">
                 <h3>
-                  HTML <span>90%</span>
+                  LANGUES <span>90%</span>
                 </h3>
                 <div className="bar">
-                  <span></span>
+                  <div className="soft-skill">Français : maternel</div>
+                  <div className="soft-skill">Anglais : professionnel</div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Home.css";
 
 // React icons import
@@ -8,14 +8,16 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
   AiOutlineMenu,
+  AiOutlineArrowDown,
+  AiOutlineArrowUp,
 } from "react-icons/ai";
 
 const Home: FC = () => {
   return (
-    <section className="home animate" id="home">
+    <section className="home " id="home">
       <div className="home-content">
         <h1>
-          Salut, moi c'est <span>Matthieu Tricoire</span>
+          Salut, moi c'est <span>Matthieu !</span>
         </h1>
 
         <div className="text-animate">
@@ -23,31 +25,38 @@ const Home: FC = () => {
         </div>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          quasi praesentium quas nihil quam alias minima magnam facere sequi
-          reprehenderit delectus, obcaecati tenetur quidem provident accusantium
-          iure, voluptas omnis illo.
+          Passionné par le domaine du Web, j'ai entrepris en début d'année 2023
+          une reconversion professionnelle pour devenir développeur Frontend. Si
+          vous êtes à la recherche d'un développeur Frontend Junior passionné et
+          motivé, n'hésitez pas à me contacter pour discuter de vos besoins.
         </p>
 
         <div className="btn-box">
-          <Link to="/" className="btn">
-            M'engager
-          </Link>
-          <Link to="/" className="btn">
-            Discutons
+          <Link to="#contact" className="btn">
+            Me contacter
           </Link>
         </div>
       </div>
 
+      <div className="home-email">matthieutricoire@gmail.com</div>
+
       <div className="home-social">
-        <Link to="/">
+        <Link to="https://www.linkedin.com/in/matthieu-tricoire-1b410972/">
           <AiFillLinkedin size={20} className="icon" />
         </Link>
-        <Link to="/">
+        <Link to="https://github.com/MatthieuTricoire">
           <AiFillGithub size={20} className="icon" />
         </Link>
-        <Link to="/">
+        <Link to="https://www.instagram.com/matthieutricoire/">
           <AiFillInstagram size={20} className="icon" />
+        </Link>
+      </div>
+      <div className="goto">
+        <div className="arrow previous deactive">
+          <AiOutlineArrowUp size={24} />
+        </div>
+        <Link to="#about" className="arrow next active">
+          <AiOutlineArrowDown size={24} />
         </Link>
       </div>
     </section>

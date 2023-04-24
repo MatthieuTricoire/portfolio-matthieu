@@ -1,8 +1,10 @@
 import { FC } from "react";
 import "./About.css";
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 
 import photo from "../../assets/img/Photojpeg.jpeg";
-import { Link } from "react-router-dom";
+
+import { HashLink as Link } from "react-router-hash-link";
 
 const About: FC = () => {
   return (
@@ -19,16 +21,25 @@ const About: FC = () => {
       <div className="about-content">
         <h3>Développeur Frontend !</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-          officiis blanditiis vero libero quis praesentium nesciunt nam, quo
-          odio, ipsam reprehenderit voluptatum perferendis magnam expedita sed.
-          Doloribus itaque quaerat natus?
+          Curieux et touche à tout, j'aime apprendre au quotidien. Passionné par
+          la technologie, je me suis lancé dans une toute nouvelle aventure
+          cette année. Si je ne suis pas derrière mon pc entrain de coder, c'est
+          que je suis en montagne entrain de remplir ma carte SD.
         </p>
       </div>
 
       <div className="btn-box btnsocial">
         <Link to="/" className="btn">
-          Read more
+          Mon CV
+        </Link>
+      </div>
+      <div className="goto">
+        <Link to="#home" className="arrow previous active">
+          <AiOutlineArrowUp size={24} />
+        </Link>
+
+        <Link to="#education" className="arrow next active">
+          <AiOutlineArrowDown size={24} />
         </Link>
       </div>
     </section>

@@ -1,0 +1,44 @@
+.projects .projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.projects-container .project {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 0 1 40rem;
+  gap: 1rem;
+
+  border: 0.25rem solid var(--accent-clr);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.project h3 {
+  font-size: 3rem;
+}
+
+.project p {
+  font-size: 1.6rem;
+}
+
+.project .project__img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.project__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.project__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

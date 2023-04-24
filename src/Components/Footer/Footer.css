@@ -22,6 +22,7 @@
   border: 0.2rem solid var(--accent-clr);
   z-index: 1;
   overflow: hidden;
+  animation: bounce 2s ease infinite;
 }
 
 .footer-iconTop a::before {
@@ -41,7 +42,7 @@
 }
 
 .footer-iconTop a .icon {
-  fill: var(--bg-clr);
+  fill: var(--second-bg-clr);
   height: 24px;
   width: 24px;
   transition: 0.3;
@@ -49,4 +50,22 @@
 
 .footer-iconTop a:hover .icon {
   fill: var(--accent-clr);
+}
+
+/* Keyframs */
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
 }

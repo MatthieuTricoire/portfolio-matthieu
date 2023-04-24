@@ -10,6 +10,7 @@ import Education from "./Components/EducationContent/Education";
 import Skills from "./Components/SkillsContent/Skills";
 import Contact from "./Components/ContactContent/Contact";
 import Footer from "./Components/Footer/Footer";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Education />
       <Skills />
       <Contact />
+      <Projects />
       <Footer />
     </BrowserRouter>
   );
