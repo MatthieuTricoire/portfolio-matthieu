@@ -3,7 +3,7 @@ import bleuvert from "../../assets/img/projet_bleuvert.png";
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="#projects">
       <h2 className="heading">
         Mes <span>Projets</span>
       </h2>

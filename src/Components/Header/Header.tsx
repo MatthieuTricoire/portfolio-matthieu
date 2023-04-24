@@ -44,6 +44,7 @@ const Header: FC = () => {
         <Link to="#about">À propos</Link>
         <Link to="#education">Formations</Link>
         <Link to="#skills">Skills</Link>
+        <Link to="#projects">Projets</Link>
         <Link to="#contact">Contact</Link>
 
         <span className="active-nav"></span>

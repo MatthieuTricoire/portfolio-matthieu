@@ -20,8 +20,8 @@ function App() {
       <About />
       <Education />
       <Skills />
-      <Contact />
       <Projects />
+      <Contact />
       <Footer />
     </BrowserRouter>
   );
