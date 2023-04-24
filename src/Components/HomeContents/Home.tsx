@@ -7,7 +7,6 @@ import {
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
-  AiOutlineMenu,
   AiOutlineArrowDown,
   AiOutlineArrowUp,
 } from "react-icons/ai";
