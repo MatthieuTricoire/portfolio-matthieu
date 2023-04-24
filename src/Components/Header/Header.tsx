@@ -26,7 +26,7 @@ const Header: FC = () => {
 
   return (
     <header className="header">
-      <Link to="#h" className="logo">
+      <Link to="#home" className="logo">
         Matthieu.
         <span className="animate"></span>
       </Link>
